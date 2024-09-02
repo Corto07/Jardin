@@ -1,17 +1,13 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import './App.css'
+import Home from './componentes/Home/home';
 
 function App() {
  
   return (
-    <>
-      <div>
-        
-      </div>
-      <h1>Jardin de Infantes Martin Pescador</h1>
-      
-    </>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+    </Routes>
   )
 }
 
